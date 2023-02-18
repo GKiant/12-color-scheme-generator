@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="nomralize.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Color Gen</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="color-pick-form" class="color-pick-form" action="submit">
+        <input id="color-picker" type="color" value="#F55A5A" />
+        <select id="color-list" class="color-list">
+          <option value="Monochrome">Monochrome</option>
+          <option value="Monochrome-dark">Monochrome-dark</option>
+          <option value="Monochrome-light">Monochrome-light</option>
+          <option value="Analogic">Analogic</option>
+          <option value="Complement">Complement</option>
+          <option value="Analogic-complement">Analogic-complement</option>
+          <option value="Triad">Triad</option>
+        </select>
+        <button id="submit-btn" class="submit-btn">Get color scheme</button>
+      </form>
+      <div id="palette-container" class="palette-container"></div>
+      <div id="hex-value-container" class="hex-value-container"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
